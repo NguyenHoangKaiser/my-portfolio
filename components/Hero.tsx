@@ -15,13 +15,14 @@ function Hero({}: Props): ReactElement {
       "<ButMoneyMakeMeHarder />",
     ],
     loop: true,
-    delaySpeed: 2000,
+    delaySpeed: 2500,
   });
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
       <Image
         className="rounded-full relative mx-auto object-cover"
+        priority
         src={avatar2}
         height={150}
         width={150}
