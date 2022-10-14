@@ -17,8 +17,8 @@ export default function BackgroundCircles({}: Props): ReactElement {
       transition={{ duration: 2 }}
       className="relative flex justify-center items-center"
     >
-      <div className="border border-[#655c5c] rounded-full h-[250px] w-[250px] absolute mt-52 animate-ping" />
-      <div className="border border-[#F7AB0A] opacity-20 rounded-full h-[650px] w-[650px] absolute mt-52 animate-pulse" />
+      <div className="border border-[#e9f504] rounded-full h-[250px] w-[250px] absolute mt-52 animate-ping" />
+      <div className="border border-[#f70ac8] opacity-20 rounded-full h-[650px] w-[650px] absolute mt-52 animate-pulse" />
     </motion.div>
   );
 }

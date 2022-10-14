@@ -12,7 +12,7 @@ function Hero({}: Props): ReactElement {
     words: [
       "Hi, The Name Is Nguyen Huy Hoang",
       "Coding-is-hard.tsx",
-      "<ButMoneyMakeMeHarder />",
+      "<ButLifeIsHarder />",
     ],
     loop: true,
     delaySpeed: 2500,
