@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 import React, { ReactElement } from "react";
-import Image from "next/image";
-import avatar from "../public/avatar.jpg";
 
 interface Props {}
 
@@ -13,7 +11,7 @@ function About({}: Props): ReactElement {
       transition={{ duration: 1.5 }}
       className="relative mx-auto flex h-screen max-w-7xl flex-col items-center justify-evenly px-10 text-center md:flex-row md:text-left"
     >
-      <h3 className="absolute top-14 text-2xl uppercase tracking-[20px] text-gray-500">
+      <h3 className="absolute top-10 text-2xl uppercase tracking-[20px] text-gray-500">
         About
       </h3>
       <motion.img
@@ -28,6 +26,7 @@ function About({}: Props): ReactElement {
         viewport={{ once: true }}
         className="md:h-95 relative -mb-20 h-56 w-56 flex-shrink-0 rounded-full object-cover md:mb-0 md:w-64 md:rounded-lg xl:h-[600px] xl:w-[500px]"
         src="https://picsum.photos/200/300"
+        alt="avatar placeholder"
       />
 
       <div className="space-y-10 px-0 md:px-10">
