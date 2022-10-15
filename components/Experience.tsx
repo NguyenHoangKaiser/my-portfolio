@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react";
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 import ExpCard from "./ExpCard";
 
 interface Props {}
@@ -16,11 +16,11 @@ function Experience({}: Props): ReactElement {
         Experience
       </h3>
 
-      <div className="w-full h-[88vh] flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory">
-        <ExpCard/>
-        <ExpCard/>
-        <ExpCard/>
-        <ExpCard/>
+      <div className="flex h-[88vh] w-full snap-x snap-mandatory space-x-5 overflow-x-scroll p-10 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f70ac8]/80">
+        <ExpCard />
+        <ExpCard />
+        <ExpCard />
+        <ExpCard />
       </div>
     </motion.div>
   );

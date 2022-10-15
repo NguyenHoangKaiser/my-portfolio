@@ -16,21 +16,22 @@ function Projects({}: Props): ReactElement {
       <h3 className="absolute top-10 text-2xl uppercase tracking-[20px] text-gray-500">
         Projects
       </h3>
-      <div className="relative z-20 flex w-full snap-x snap-mandatory overflow-y-hidden overflow-x-scroll">
-        {projects.map((project, index) => (
+
+      <div className="relative z-20 flex w-full snap-x snap-mandatory overflow-y-hidden overflow-x-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f70ac8]/80">
+        {projects.map((_project, index) => (
           <div
             key={index}
             className="flex h-screen w-screen flex-shrink-0 snap-center flex-col items-center justify-center space-y-5 p-20 md:p-44"
           >
             <motion.img
               initial={{
-                y: -300,
+                x: -300,
                 opacity: 0,
               }}
               transition={{
                 duration: 1.2,
               }}
-              whileInView={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               src={"https://picsum.photos/550/400"}
               alt="placeholder"

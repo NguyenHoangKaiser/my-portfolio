@@ -8,7 +8,7 @@ import avatar2 from "../public/avatar2.png";
 interface Props {}
 
 function Hero({}: Props): ReactElement {
-  const [text, count] = useTypewriter({
+  const [text] = useTypewriter({
     words: [
       "Hi, The Name Is Nguyen Huy Hoang",
       "Coding-is-hard.tsx",
@@ -18,10 +18,10 @@ function Hero({}: Props): ReactElement {
     delaySpeed: 2500,
   });
   return (
-    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
+    <div className="flex h-screen flex-col items-center justify-center space-y-8 overflow-hidden text-center">
       <BackgroundCircles />
       <Image
-        className="rounded-full relative mx-auto object-cover"
+        className="relative mx-auto rounded-full object-cover"
         priority
         src={avatar2}
         height={150}
@@ -29,10 +29,10 @@ function Hero({}: Props): ReactElement {
         alt="avatar placeholder"
       />
       <div className="z-20">
-        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
+        <h2 className="pb-2 text-sm uppercase tracking-[15px] text-gray-500">
           Software Engineer
         </h2>
-        <h1 className="text-5xl lg:text-6xl font-semibold px-10">
+        <h1 className="px-10 text-5xl font-semibold lg:text-6xl">
           <span className="mr-3">{text}</span>
           <Cursor cursorColor="#F0f" />
         </h1>
